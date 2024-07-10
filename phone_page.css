@@ -1,0 +1,596 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: url("./Image/xiaomi_ico.png"), ;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, black 30%, white );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+
+/* todo) HEADER  */
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+header .nav_logo{
+    width: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav_logo img{
+    width: 35px;
+    margin-top: 5px;
+    transition: 200ms;
+
+}
+
+header .nav_logo:hover img{
+    transform: translateX(5px);
+    width: 45px;
+}
+
+header nav{
+    width: 80%;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+header nav ul li{
+    width: 105px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+
+header nav ul li a{
+    font-size: 15px;
+    font-family: sans-serif ;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    transition: 200ms;
+}
+
+li:hover a{
+    background-color: white;
+    color: orange;
+    font-size: 17px;
+    box-shadow: 0 0 5px 5px orange;
+    border-radius: 15px;
+}
+
+header nav ul li .dropdown{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    z-index: 1  ;
+    visibility: hidden;
+}
+
+header nav ul li:hover .dropdown{
+    visibility: visible;
+}
+
+
+/* * ==============NAV ACCOUNT======== */
+
+header .nav_account{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+   
+}
+
+header .nav_account img{
+    width: 35px;
+    transition: 200ms;
+}
+
+header .nav_account:hover img{
+    transform: scale(1.3);
+}
+
+
+
+/* todo) HEADER BITDI */
+
+
+/* * ======== BOX 1 basdadi ============ */
+
+.box1{
+    width: 350px;
+    height: 650px;
+    background-color: white;
+    margin-top: 48px;
+    margin-left: 50px;
+    border-radius: 15px;
+    transition: 500ms;
+    position: relative;
+}
+
+.box1:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 10px grey;
+}
+
+.box1 .phone_img{
+    width: 300px;
+    margin-left: 30px;
+    transition: 500ms;
+}
+
+.box1 h1{
+    margin-left: 90px;
+    margin-top: -20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: grey;
+    transition: 500ms;
+}
+.box1:hover h1{
+    color: black;
+}
+
+.box1 .calendar_ico{
+    width: 25px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.box1 .phone_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.box1 .android_ico{
+    width: 25px;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+
+.box1 .chipset_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.box1 p{
+    font-family: "Teko";
+    font-size: 20px;
+}
+
+.box1 .price{
+    position: absolute;
+    top: 520px;
+    left: 100px;
+    font-size: 20px;
+    font-family: fantasy;
+
+}
+
+
+.box1 .buy_now{
+    width: 300px;
+    height: 30px;
+    background-color: gray;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 65px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    transition: 500ms;
+    
+}
+
+.box1 .buy_now:hover {
+    transform: translateY(-10px); 
+    opacity: 0.6;
+}
+
+.box1 .market_square{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.box1 .add_to_favorites{
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    transition: 500ms;
+}
+
+.box1 .add_to_favorites:hover{
+    transform: translateY(-5px);
+    opacity: 0.6;
+}
+.box1 .add_to_favorites:hover .buy_now{
+    transform: translateY(-5px);
+}
+
+
+.box1 .icons_heart{
+    width: 20px;
+    margin-right: 5px;
+}
+/* * BOX 1 bitdi */
+
+
+/*  ? BOX 2 basdadi */
+
+.box2{
+    width: 350px;
+    height: 650px;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    transition: 500ms;
+}
+
+.box2:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 10px darkgreen; 
+}
+
+.box2 .phone_img{
+    width: 300px;
+    margin-left: 30px;
+}
+
+.box2 h1{
+    margin-left: 115px;
+    margin-top: -20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    color: darkgreen;
+    transition: 500ms;
+}
+
+.box2:hover h1{
+    color: black;
+}
+
+.box2 .calendar_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.box2 .phone_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.box2 .android_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.box2 .chipset_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.box2 p{
+    font-family: "Teko";
+    font-size: 20px;
+}
+
+.box2 .price{
+    position: absolute;
+    top: 518px;
+    left: 95px;
+    font-family: fantasy;
+}
+
+.box2 .buy_now{
+    width: 300px;
+    height: 30px;
+    color: white;
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+.box2 .buy_now:hover{
+    transform: translateY(-10px);
+    opacity: 0.6;
+}
+
+.box2 .buy_now img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.box2 .add_to_favorites{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.box2 .add_to_favorites:hover{
+    transform: translateY(-5px);
+    opacity: 0.6;
+}
+
+.box2 .add_to_favorites img{
+    width: 20px;
+    margin-right: 5px;
+}
+/* ? BOX 2 bitdi */
+
+/* ! BOX 3 basdiyir */
+
+.box3 {
+    width: 350px;
+    height: 650px;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 100px;
+    right: 130px;
+    transition: 500ms;
+}
+
+.box3:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 10px royalblue;
+}
+
+.box3 .phone_img{
+    width: 300px;
+    margin-left: 30px;
+}
+
+.box3 h1{
+    margin-top: -20px;
+    margin-left: 92px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: royalblue;
+    transition: 500ms;
+}
+.box3:hover h1{
+    color: black;
+}
+
+.box3 .calendar_ico{
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.box3 .phone_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.box3 .android_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.box3 .chipset_ico{
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.box3 p{
+    font-family: "Teko";
+    font-size: 20px;
+}
+
+.box3 .price{
+    font-family: fantasy;
+    position: absolute;
+    top: 518px;
+    left: 95px;
+}
+
+
+.box3 .buy_now{
+    width: 300px;
+    height: 30px;
+    background-color: royalblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 65px;
+    margin-left: 20px;
+    transition: 500ms;
+}
+
+.box3 .buy_now:hover{
+    transform: translateY(-10px);
+    opacity: 0.6;
+}
+
+.box3 .buy_now img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+
+.box3 .add_to_favorites{
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: 500ms;
+}
+
+.box3 .add_to_favorites:hover{
+    transform: translateY(-5px);
+    opacity: 0.6;
+}
+
+.box3 .add_to_favorites img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* ! BOX 3 BİTDİ */
+
+.marquee{
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    color: red;
+    margin-top: 50px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+/* todo) IFRAME-LER  */
+
+.info1{
+    width: 620px;
+    height: 530px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 850px;
+    left: 50px;
+    font-family: "Teko";
+    font-size: 20px;
+    
+}
+
+.info1 iframe{
+    width: 500px;
+    height: 300px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.info2{
+    width: 620px;
+    height: 530px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 850px;
+    right: 50px;
+    font-family: "Teko";
+    font-size: 20px;
+}
+
+.info2 iframe{
+    width: 500px;
+    height: 300px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.info3{
+    width: 620px;
+    height: 530px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 1400px;
+    left: 400px;
+    font-family: "Teko";
+    font-size: 20px;
+}
+
+.info3 iframe{
+    width: 500px;
+    height: 300px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+
+blockquote{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+span{
+    font-size: 30px;
+}
+
+i{
+    margin-left: 4px;
+}

@@ -1,0 +1,284 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+   background-image: url("./Image/Xiaomi-14-Ultra.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+   background-size: cover;
+}
+
+/* todo) HEADER */
+header{
+   width: 100%;
+   height: 50px;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+header .nav_logo{
+   width: 50px;
+   margin-left: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+header .nav_logo img{
+   width: 35px;
+   margin-top: 5px;
+   transition: 200ms;
+}
+
+header .nav_logo:hover img{
+   transform: translateX(5px);
+   width: 45px;
+}
+
+header nav{
+   width: 80%;
+}
+
+header nav ul {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+header nav ul li{
+   width: 105px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 5px;
+}
+
+li a{
+   color: white;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-size: 15px;
+   transition: 200ms;
+   padding: 3px;
+}
+
+li:hover a{
+   color: orange;
+   background-color: white;
+   border-radius: 15px;
+   box-shadow: 0 0 5px 5px orange;
+   font-size: 17px;
+}
+
+.tel_ad{
+   width: 100%;
+   height: 100px;
+   background-color: black;
+   position: absolute;
+   top: 50px;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: sans-serif;
+   font-size: 20px;
+   color: white;
+   z-index: 1;
+   visibility: hidden;
+}
+
+
+.phone:hover .tel_ad{
+   visibility: visible;
+}
+
+.tel_ad li a{
+   color: white;
+   background-color: black;
+   font-size: 20px;
+   box-shadow: none;
+}
+
+.tel_ad li a:hover{
+   color: orange;
+}
+
+
+.smart_home_inside{
+   width: 100%;
+   height: 100px;
+   background-color: black;
+   position: absolute;
+   top: 50px;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   visibility: hidden;
+}
+
+.smart_home:hover .smart_home_inside{
+   visibility: visible;
+} 
+
+.smart_home_inside li a{
+   background-color: black;
+   box-shadow: none;
+   border-radius: 0;
+   color: white;
+   position: relative;
+   padding: 20px;
+}
+
+.smart_home_inside li:hover a{
+   color: orange;
+}
+
+.life_style_inside{
+   width: 100%;
+   height: 100px;
+   background-color: black;
+   position: absolute;
+   top: 50px;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   visibility: hidden;
+   color: white;
+}
+.life_style:hover .life_style_inside{
+   visibility: visible;
+}
+
+.life_style_inside li a{
+   background-color: black;
+   border-radius: 0;
+   box-shadow: none;
+   color: white;
+}
+
+.life_style_inside li:hover a{
+   color: orange;
+}
+
+
+.search_bar{
+ 
+   height: 30px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   border-radius: 20px;
+   position: absolute;
+   top: 10px;
+   left: auto;
+   right: 600px;
+   padding: 1px 5px;
+}
+
+.search_bar input{
+   width: 0;
+   border: 0;
+   outline: 0;
+   margin-left: 5px;
+   background: transparent;
+   transition: 600ms;
+}
+
+.search_bar:hover input{
+   width: 200px;
+}
+
+.search_bar input:focus{
+   width: 200px;
+}
+
+.search_bar a i{
+   margin-right: 5px;
+}
+
+.nav_account {
+   width: 40px;
+   background: transparent;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   right: 10px;
+}
+
+.nav_account img{
+   width: 35px;
+   transition: 200ms;
+}
+.nav_account:hover img{
+   transform: scale(1.3);
+}
+
+/* todo) ============================== HEADER BITDI ================================== */
+
+
+/* !================================ MOTHER PAGE =====================================*/
+.phone_title h1{
+   text-align: right;
+   margin-top: 260px;
+   margin-right: 205px;
+   font-family: sans-serif;
+   font-size: 60px;
+   color: white;
+}
+.phone_title .p1{
+   text-align: right;
+   margin-top: 10px;
+   margin-right: 210px;
+   font-size: 15px;
+   font-family: sans-serif;
+   color: white;
+}
+.phone_title .p2{
+   text-align: right;
+   margin-top: 20px;
+   margin-right: 150px;
+   font-family: monospace;
+   font-size: 50px;
+   font-weight: 900;
+   color: white;
+}
+.phone_title button{
+   width: 130px;
+   height: 30px;
+   margin-left: 1040px;
+   margin-top: 30px;
+   border-radius: 20px;
+   font-size: 14px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.phone_title button:hover{
+   cursor: pointer;
+   border-radius: 10px;
+   width: 150px;
+   height: 30px;
+   margin-left: 1028px;
+   background-color: black;
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+}

@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: black;
+ }
+ 
+ header nav ul{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+ }
+ 
+ header nav ul .nav_image{
+    width: 30px;
+    margin: 10px 0 0 30px;
+ }
+ 
+ header nav ul li{
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 40px;
+ }
+ li a{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+ }
+ li:hover a{
+    color: orange;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    box-shadow: 0 0 5px 5px orange;
+    border-radius: 5px;
+ }
+ 
+ header nav ul .nav_account{
+    margin-left: 830px;
+    margin-top:  10px;
+ }
+ 
+ header nav ul .nav_account img{
+    width: 30px;
+ }
+
+
+
+ 
+
+ .section_1 video{
+    width: 100%;
+    height: 100%;
+ }
+
+ .section_2 img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .section_2 div{
+    position: relative;
+ }
+.section_2 div h5{
+    color: #5f9b8a;
+    position: absolute;
+    top: 500px;
+    left: 650px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.section_2 div .h1_1{
+    color: white;
+    position: absolute;
+    top:550px;
+    left: 420px;
+    font-family: sans-serif;
+    font-size: 80px;
+
+}
+.section_2 div .h1_2{
+    color: white;
+    position: absolute;
+    top:650px;
+    left: 520px;
+    font-family: sans-serif;
+    font-size: 70px;
+
+}
+
+.section_3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section_3 div{
+    position: relative;
+}
+
+.section_3 .h3_1{
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+.section_3 .h3_2{
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 297px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+.section_3 .h4_1{
+    color: white;
+    position: absolute;
+    top: 259px;
+    left: 297px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.section_3 .h4_2{
+    color: white;
+    position: absolute;
+    top: 290px;
+    left: 297px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.section_3 span{
+    color: grey;
+    position: absolute;
+    top: 350px;
+    left: 290px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.section_3 .ico1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+}
+.section_3 .ico2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
+.section_3 .ico3{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 500px;
+    left: 800px;
+}
+.section_3 .ico4{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+}
+
+
+.section_3 .span_ico_1{
+    position: absolute;
+    top: 570px;
+    left: 100px;
+}
+.section_3 .span_ico_2{
+    position: absolute;
+    top: 570px;
+    left: 440px;
+}
+.section_3 .span_ico_3{
+    position: absolute;
+    top: 570px;
+    left: 705px;
+}
+.section_3 .span_ico_4{
+    position: absolute;
+    top: 570px;
+    left: 1020px;
+}
+
+.section_4 video{
+    width: 100%;
+    height: 100%;
+}
+.section_4 div{
+    position: relative;
+}
+.section_4 h3{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+.section_4 h4{
+    position: absolute;
+    top: 150px;
+    left: 470px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.section_4 span{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    color: grey;
+    font-size: 20px;
+}
+
+
+
+footer div ul{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(70, 69, 69);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+}
+footer div ul li{
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
