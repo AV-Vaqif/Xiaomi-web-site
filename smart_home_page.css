@@ -384,7 +384,7 @@ li:hover a {
       top: 2%;
    }
 
-   .section2 .all_boxs {}
+   
 }
 
 @media(max-width:632px) {
@@ -608,7 +608,7 @@ li:hover a {
       top: 2%;
    }
 
-   .section4 .all_boxs {}
+  
 }
 
 @media(max-width:632px) {
@@ -810,7 +810,7 @@ li:hover a {
       top: 2%;
    }
 
-   .section5 .all_boxs {}
+   
 }
 
 @media(max-width:632px) {
@@ -1040,9 +1040,6 @@ li:hover a {
    .section6 .section_title{
       margin-left: -50px;
    }
-   
-
-   .section6 .all_boxs {}
 }
 
 @media(max-width:632px) {
@@ -1263,9 +1260,6 @@ li:hover a {
    .section7 .section_title{
       margin-left: -50px;
    }
-   
-
-   .section7 .all_boxs {}
 }
 
 @media(max-width:632px) {
