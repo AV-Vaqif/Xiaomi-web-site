@@ -47,7 +47,7 @@ header .nav_logo {
 }
 
 header .nav_logo img {
-   width: 35px;
+   width: 30px;
    margin-top: 5px;
    transition: 200ms;
 }
@@ -59,6 +59,7 @@ header .nav_logo:hover img {
 
 header nav {
    width: 80%;
+   margin-top: 20px;
 }
 
 header nav ul {
