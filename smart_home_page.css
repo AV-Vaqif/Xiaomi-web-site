@@ -1431,94 +1431,15 @@ li:hover a {
 /* ! ============ FOOTER ==================== */
 
 
-@media (max-width:1300px){
-   .footer_div .support{
-      transform: scale(0.8);
-      position: absolute;
-      top: 0;
-      left: 0;
-      line-height: 40px;
-      margin: 0;
-      padding: 0;
-   }
-   .footer_div .about_us{
-      transform: scale(0.8);
-      position: absolute;
-      top: 0;
-      left: 230px;
-      margin: 0;
-      padding: 0;
-   }  
-   .footer_div .xiaomi_projects{
-      transform: scale(0.8);
-      position: absolute;
-      top: 0;
-      left: 400px;
-      margin-top: 15px;
-      padding: 0;
-   }
-}
 
-@media (max-width:1051px){
-   .footer_div .bottom_word{
-      transform: scale(0.8) translateX(-110px);
-   }
-   .footer_ico{
-      transform: scale(0.8) translateX(100px)
 
-   }
-   .footer_subscribe{
-      transform: scale(0.8) translateX(60px)
-   }
-   
-}
 
-@media (max-width:913px){
-   .footer_div .support{
-      transform: scale(0.7) translateX(-20px) translateY(-50px);
-      position: absolute;
-      top: 0;
-      left: 0;
-      line-height: 40px;
-      margin: 0;
-      padding: 0;
-   }
-   .footer_div .about_us{
-      transform: scale(0.7) translateX(-20px) translateY(-50px);
-      position: absolute;
-      top: 0;
-      left: 230px;
-      margin: 0;
-      padding: 0;
-   }  
-   .footer_div .xiaomi_projects{
-      transform: scale(0.7) translateX(-20px) translateY(-50px);
-      position: absolute;
-      top: 0;
-      left: 400px;
-      margin-top: 15px;
-      padding: 0;
-   }
-}
 
-@media (max-width:873px){
-   .footer_div .bottom_word{
-      transform: scale(0.6) translateX(-280px);
-   }
-   .footer_ico{
-      transform: scale(0.6) translateX(200px)
-
-   }
-   .footer_subscribe{
-      transform: scale(0.6) translateX(130px)
-   }
-}
 
 footer {
    width: 100%;
-   height: 600px;
+   height: 800px;
    background-color: #191919;
-   display: grid;
    position: relative;
 }
 
@@ -1689,6 +1610,132 @@ footer .footer_div .global span {
 footer .footer_div .global i {
    margin-left: 5px;
    font-size: 20px;
+}
+
+@media (max-width:1300px){
+   .footer_div .support{
+      transform: scale(0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 40px;
+      margin: 0;
+      padding: 0;
+   }
+   .footer_div .about_us{
+      transform: scale(0.8);
+      position: absolute;
+      top: 0;
+      left: 230px;
+      margin: 0;
+      padding: 0;
+   }  
+   .footer_div .xiaomi_projects{
+      transform: scale(0.8);
+      position: absolute;
+      top: 0;
+      left: 400px;
+      margin-top: 15px;
+      padding: 0;
+   }
+}
+
+@media (max-width:1051px){
+   .footer_div .bottom_word{
+      transform: scale(0.8) translateX(-110px);
+   }
+   .footer_ico{
+      transform: scale(0.8) translateX(100px)
+
+   }
+   .footer_subscribe{
+      transform: scale(0.8) translateX(60px)
+   }
+   
+}
+
+@media (max-width:913px){
+   .footer_div .support{
+      transform: scale(0.7) translateX(-20px) translateY(-50px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 40px;
+      margin: 0;
+      padding: 0;
+   }
+   .footer_div .about_us{
+      transform: scale(0.7) translateX(-20px) translateY(-50px);
+      position: absolute;
+      top: 0;
+      left: 230px;
+      margin: 0;
+      padding: 0;
+   }  
+   .footer_div .xiaomi_projects{
+      transform: scale(0.7) translateX(-20px) translateY(-50px);
+      position: absolute;
+      top: 0;
+      left: 400px;
+      margin-top: 15px;
+      padding: 0;
+   }
+}
+
+@media (max-width:873px){
+   .footer_div .support{
+      transform: scale(0.8) translateX(30%);
+   }
+   .footer_div .about_us{
+      transform: scale(0.8) translateX(60%);
+   }
+   .footer_div .xiaomi_projects{
+      transform: scale(0.8) translateX(80%);
+   }
+   .footer_div{
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+   }
+   .footer-right{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      right: 35%;
+      bottom: 250px;
+   }
+   .footer_div .bottom_word{
+      transform: scale(0.65) translateX(-180px);
+   }
+   .footer_ico{
+      transform: scale(0.6) translateX(200px)
+   }
+   .footer_subscribe{
+      transform: scale(0.6) translateX(220px)
+   }
+   
+}
+
+@media (max-width:700px){
+   .footer_div .support{
+      transform: scale(0.5) translateX(-10px);
+   }
+   .footer_div .about_us{
+      transform: scale(0.5) translateX(-10px);
+   }
+   .footer_div .xiaomi_projects{
+      transform: scale(0.5) translateX(-10px);
+   }
+   .footer_div .bottom_word{
+      transform: scale(0.5) translateX(-180px);
+   }
+   .footer_ico{
+      transform: scale(0.5) translateX(300px)
+   }
+   .footer_subscribe{
+      transform: scale(0.5) translateX(320px)
+   }
 }
 
 
