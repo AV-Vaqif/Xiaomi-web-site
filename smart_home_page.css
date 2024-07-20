@@ -59,7 +59,7 @@ header .nav_logo:hover img {
 
 header nav {
    width: 80%;
- 
+
 }
 
 header nav ul {
@@ -384,7 +384,7 @@ li:hover a {
       top: 2%;
    }
 
-   
+
 }
 
 @media(max-width:632px) {
@@ -608,7 +608,7 @@ li:hover a {
       top: 2%;
    }
 
-  
+
 }
 
 @media(max-width:632px) {
@@ -810,7 +810,7 @@ li:hover a {
       top: 2%;
    }
 
-   
+
 }
 
 @media(max-width:632px) {
@@ -996,7 +996,7 @@ li:hover a {
    align-items: center;
    justify-content: center;
    position: relative;
-   
+
 }
 
 .section6 .section_title {
@@ -1008,18 +1008,19 @@ li:hover a {
    letter-spacing: 5px;
 }
 
-.section6 .all_boxs{
+.section6 .all_boxs {
    width: 95%;
    height: 600px;
- 
+
    display: flex;
    align-items: center;
    justify-content: space-around;
    position: absolute;
    top: 50%;
-   left:50%;
+   left: 50%;
    transform: translate(-50%, -50%);
 }
+
 @media (max-width:975px) {
    .section6 {
       height: 1100px;
@@ -1037,7 +1038,8 @@ li:hover a {
    .section6 .section_title {
       top: 2%;
    }
-   .section6 .section_title{
+
+   .section6 .section_title {
       margin-left: -50px;
    }
 }
@@ -1050,11 +1052,12 @@ li:hover a {
    .section6 .all_boxs {
       height: 1400px;
    }
-   .section6 .section_title{
+
+   .section6 .section_title {
       margin-left: -80px;
    }
 
-   
+
 }
 
 .section6 .box {
@@ -1215,7 +1218,7 @@ li:hover a {
    align-items: center;
    justify-content: center;
    position: relative;
-   
+
 }
 
 .section7 .section_title {
@@ -1227,16 +1230,16 @@ li:hover a {
    letter-spacing: 5px;
 }
 
-.section7 .all_boxs{
+.section7 .all_boxs {
    width: 95%;
-  
+
    display: flex;
    align-items: center;
    justify-content: center;
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%,-50%);
+   transform: translate(-50%, -50%);
 
 }
 
@@ -1257,7 +1260,8 @@ li:hover a {
    .section7 .section_title {
       top: 2%;
    }
-   .section7 .section_title{
+
+   .section7 .section_title {
       margin-left: -50px;
    }
 }
@@ -1270,11 +1274,12 @@ li:hover a {
    .section7 .all_boxs {
       height: 1400px;
    }
-   .section7 .section_title{
+
+   .section7 .section_title {
       margin-left: -80px;
    }
 
-   
+
 }
 
 .section7 .box {
@@ -1438,75 +1443,82 @@ li:hover a {
 
 footer {
    width: 100%;
-   height: 800px;
+   /* height: 800px; */
    background-color: #191919;
-   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+footer .footer_left {
+   width: 60%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-around;
 }
 
 
-footer div .support {
-   position: absolute;
-   top: 30px;
-   left: 30px;
+footer .footer_left .support {
+
    list-style: none;
-   line-height: 40px;
+   line-height: 30px;
 }
 
-footer div .about_us {
-   position: absolute;
-   top: 30px;
-   left: 350px;
+footer .footer_left .about_us {
+
    list-style: none;
-   line-height: 40px;
+   line-height: 30px;
 }
 
-footer div .xiaomi_projects {
-   position: absolute;
-   top: 30px;
-   left: 650px;
+footer .footer_left .xiaomi_projects {
+
    list-style: none;
-   line-height: 40px;
+   line-height: 30px;
 }
 
-li a {
+
+
+footer .footer_left li a {
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    position: relative;
+   font-size: 15px;
 }
 
-li:hover a {
+footer .footer_left li:hover a {
    background-color: transparent;
    box-shadow: none;
    font-size: 15px;
 }
 
-li a::after {
+footer .footer_left li a::after {
    content: "";
    width: 0;
    height: 2px;
-   position: absolute;
-   left: 5px;
-   bottom: -2px;
    background-color: orange;
    transition: 1s;
 }
 
-li a:hover::after {
+footer .footer_left li a:hover::after {
    width: 100%;
 }
 
-footer div li:nth-of-type(1) {
+footer .footer_left li:nth-of-type(1) {
    font-family: fantasy;
    font-size: 20px;
    letter-spacing: 2px;
    color: white;
 }
 
-footer .footer_ico {
+/* bura sag terefdi */
+footer .footer-right {
+   width: 40%;
+   padding: 30px;
+}
+
+footer .footer-right .footer_ico {
    width: 250px;
    height: 100px;
-   position: absolute;
-   top: 40px;
-   right: 100px;
 
 }
 
@@ -1515,15 +1527,15 @@ footer .footer_ico p {
    font-size: 20px;
    color: white;
    font-weight: 600;
-   text-align: center;
+
 }
 
 footer .footer_ico a i {
-   font-size: 30px;
+   font-size: 25px;
    color: white;
-   margin-top: 20px;
-   margin-left: 28px;
-   transition: 200ms;
+   margin-top: 5px;
+   transition: 500ms all;
+   margin-left: 5px;
 }
 
 footer .footer_ico a:hover i {
@@ -1534,207 +1546,80 @@ footer .footer_ico a:hover i {
 }
 
 footer .footer_subscribe {
-   width: 400px;
+   width: 80%;
    height: 100px;
-   position: absolute;
-   top: 200px;
-   right: 30px;
 }
 
 footer .footer_subscribe p {
    font-family: sans-serif;
-   font-size: 20px;
-   font-weight: 600;
+   font-size: 16px;
+   font-weight: 100;
    color: white;
 }
 
 footer .footer_subscribe .email_input {
-   width: 100%;
+   width: 80%;
+   height: 35px;
    background-color: white;
    margin-top: 25px;
    border-radius: 10px;
    background: transparent;
    outline: 2px solid grey;
    padding: 1px 10px;
+   position: relative;
 }
 
 footer .footer_subscribe .email_input i {
-   position: absolute;
+
    font-size: 25px;
-   top: 85px;
-   right: 15px;
+   position: absolute;
+   top: 15%;
+   right: 5%;
 }
 
 footer .footer_subscribe input {
-   width: 100%;
-   height: 50px;
+   width: 80%;
+   height: 20px;
    outline: none;
    border: none;
    border-radius: 10px;
    background: transparent;
    color: grey;
+   transform: translateY(3px);
 }
 
-footer .footer_div .line {
-   width: 95%;
-   background-color: white;
-   height: 1px;
-   position: absolute;
-   left: 30px;
-   bottom: 100px;
-}
 
-footer .footer_div .bottom_word {
-   position: absolute;
-   bottom: 30px;
-   left: 0;
-}
+@media (max-width:900px) {
 
-footer .footer_div .bottom_word span {
-   color: white;
-   margin-left: 30px;
-   font-family: sans-serif;
-}
-
-footer .footer_div .global {
-   position: absolute;
-   bottom: 30px;
-   right: 30px;
-}
-
-footer .footer_div .global span {
-   color: white;
-   font-family: sans-serif;
-}
-
-footer .footer_div .global i {
-   margin-left: 5px;
-   font-size: 20px;
-}
-
-@media (max-width:1300px){
-   .footer_div .support{
-      transform: scale(0.8);
-      position: absolute;
-      top: 0;
-      left: 0;
-      line-height: 40px;
-      margin: 0;
-      padding: 0;
-   }
-   .footer_div .about_us{
-      transform: scale(0.8);
-      position: absolute;
-      top: 0;
-      left: 230px;
-      margin: 0;
-      padding: 0;
-   }  
-   .footer_div .xiaomi_projects{
-      transform: scale(0.8);
-      position: absolute;
-      top: 0;
-      left: 400px;
-      margin-top: 15px;
-      padding: 0;
-   }
-}
-
-@media (max-width:1051px){
-   .footer_div .bottom_word{
-      transform: scale(0.8) translateX(-110px);
-   }
-   .footer_ico{
-      transform: scale(0.8) translateX(100px)
-
-   }
-   .footer_subscribe{
-      transform: scale(0.8) translateX(60px)
-   }
-   
-}
-
-@media (max-width:913px){
-   .footer_div .support{
-      transform: scale(0.7) translateX(-20px) translateY(-50px);
-      position: absolute;
-      top: 0;
-      left: 0;
-      line-height: 40px;
-      margin: 0;
-      padding: 0;
-   }
-   .footer_div .about_us{
-      transform: scale(0.7) translateX(-20px) translateY(-50px);
-      position: absolute;
-      top: 0;
-      left: 230px;
-      margin: 0;
-      padding: 0;
-   }  
-   .footer_div .xiaomi_projects{
-      transform: scale(0.7) translateX(-20px) translateY(-50px);
-      position: absolute;
-      top: 0;
-      left: 400px;
-      margin-top: 15px;
-      padding: 0;
-   }
-}
-
-@media (max-width:873px){
-   .footer_div .support{
-      transform: scale(0.8) translateX(30%);
-   }
-   .footer_div .about_us{
-      transform: scale(0.8) translateX(60%);
-   }
-   .footer_div .xiaomi_projects{
-      transform: scale(0.8) translateX(80%);
-   }
-   .footer_div{
-      width: 100%;
-      height: 600px;
-      display: flex;
+   footer {
       flex-direction: column;
    }
-   .footer-right{
-      width: 200px;
-      height: 200px;
-      position: absolute;
-      right: 35%;
-      bottom: 250px;
+
+   footer .footer_left {
+      width: 100%;
+      justify-content: space-evenly;
+
    }
-   .footer_div .bottom_word{
-      transform: scale(0.65) translateX(-180px);
+
+   footer .footer-right {
+      width: 100%;
+      font-size: 20px;
    }
-   .footer_ico{
-      transform: scale(0.6) translateX(200px)
-   }
-   .footer_subscribe{
-      transform: scale(0.6) translateX(220px)
-   }
-   
 }
 
-@media (max-width:700px){
-   .footer_div .support{
-      transform: scale(0.5) translateX(-10px);
+@media (max-width:600px) {
+   footer .footer_left {
+      display: none;
    }
-   .footer_div .about_us{
-      transform: scale(0.5) translateX(-10px);
+}
+@media (max-width:500px){
+   footer .footer-right .email_input input{
+      width: 90%;
    }
-   .footer_div .xiaomi_projects{
-      transform: scale(0.5) translateX(-10px);
-   }
-   .footer_div .bottom_word{
-      transform: scale(0.5) translateX(-180px);
-   }
-   .footer_ico{
-      transform: scale(0.5) translateX(300px)
-   }
-   .footer_subscribe{
-      transform: scale(0.5) translateX(320px)
+   footer .footer-right .email_input input::placeholder{
+      font-size: 13px;
+      position: absolute;
+      top: 0;
    }
 }
 
